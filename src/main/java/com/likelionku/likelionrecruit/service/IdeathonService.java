@@ -18,7 +18,7 @@ public class IdeathonService {
         // 이미지 ID를 기반으로 이미지 URL을 가져오는 로직
         Ideathon ideathon = ideathonRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Image not found with id: " + id));
-        return ideathon.getUrl();
+        return ideathon.getPhoto();
     }
 
     public Long saveImageUrl(Ideathon ideathon) {

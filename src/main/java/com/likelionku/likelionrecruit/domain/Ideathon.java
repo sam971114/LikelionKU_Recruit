@@ -14,5 +14,5 @@ public class Ideathon {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String url;
+    private String photo;
 }

@@ -19,7 +19,7 @@ public class HackathonService {
         // 이미지 ID를 기반으로 이미지 URL을 가져오는 로직
         Hackathon hackathon = hackathonRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Image not found with id: " + id));
-        return hackathon.getUrl();
+        return hackathon.getPhoto();
     }
 
     public Long saveImageUrl(Hackathon hackathon) {
